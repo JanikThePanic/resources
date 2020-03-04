@@ -6,6 +6,12 @@
   <title>the repository</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <style>
+    a {
+      color: black;
+    }
+  </style>
+
   <!-- jquery bro -->
   <script src="./libraries/jquery-3.4.1.min.js"></script>
   <!-- list.js (listing lia) -->
@@ -30,14 +36,6 @@
         <h3 class="name">Jonny</h3>
         <p class="date">1/13/2020</p>
       </li>
-      <li>
-        <h3 class="name">zonas</h3>
-        <p class="date">2/14/2020</p>
-      </li>
-      <li>
-        <h3 class="name">Jonas</h3>
-        <p class="date">1/16/2020</p>
-      </li>
     </ul>
   </div>
 
@@ -47,7 +45,12 @@
       valueNames: ['name', 'date']
     };
 
-    var hackerList = new List('css bits', options);
+    var hackerList = new List('css bits', options,);
+    
+    hackerList.add( {name: '<a href = "google.com">Jonas</a>', date:'13/13/13'});
+
+    hackerList.add( {name: '<a href = "google.com">Jonas</a>', date:'13/13/13'});
+
   </script>
 
 
