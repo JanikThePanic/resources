@@ -13,7 +13,6 @@ body {
 
 /* the main title */
 .heading {
-  font-family: "Roboto Light";
   font-style: italic;
   font-size: 52px;
   text-align: center;
@@ -80,32 +79,37 @@ a:hover {
   display: none;
 }
 
-/* list formatting */
-ul {
-  padding: 0;
+/* table formatting */
+
+table {
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 75%;
+  margin-left: auto; 
+  margin-right: auto;
 }
 
-li {
-  display: list-item;
-  margin: 0 0 0.5em 1em;
-  list-style: none;
-  margin-left: 0;
-  margin-bottom: 0.6em;
-  padding-bottom: 0.6rem;
+tr {
   border-bottom: 1px solid #A9A9A9;
-}
-
-.desc {
-  max-width: 75%;
-  word-wrap: break-word;
-}
-
-.type {
-  float: right;
 }
 
 /* name of entry */
 .name {
   font-family: "Roboto";
   font-weight: bold;
+  width: 12%;
+  padding: 5px;
+}
+
+.type {
+  display: table-cell;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .breaker {
+    display: block;
+  }
 }
