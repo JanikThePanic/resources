@@ -6,11 +6,13 @@
   <title>the repository</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <style>
-    a {
-      color: black;
-    }
-  </style>
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  
+  <!-- favicon (no good one yet)-->
+  <!-- <link rel="shortcut icon" href="./icon.png" type="image/png"> -->
 
   <!-- jquery bro -->
   <script src="./libraries/jquery-3.4.1.min.js"></script>
@@ -21,37 +23,55 @@
 
 <body>
 
-  <div id="css bits">
+  <!-- "the repository" heading-->
+  <p class="title line">the repository</p>
 
+
+  <!-- the great search list of everything -->
+  <div id="main search">
+
+    <!-- search bar -->
     <input class="search" placeholder="Search">
+
+    <!-- sorting buttons -->
+
     <button class="sort" data-sort="name">
       Sort by Name
     </button>
-    <button class="sort" data-sort="date">
-      Sort by Date Modified
+
+    <button class="sort" data-sort="type">
+      Sort by Type
     </button>
 
+    <!-- the list -->
     <ul class="list">
+
+
+      <!-- template entry and also the about page -->
       <li>
-        <h3 class="name">Jonny</h3>
-        <p class="date">1/13/2020</p>
+        <a href="./about.html" class="name">About</a>
+        <span class="desc">- The About page of <i class="line">the repository</i></span>
+        <span class="type">About Page</span>
       </li>
+
     </ul>
+
   </div>
 
-  <script>
 
+
+  <script>
+    // sets vars that are needed for entry
     var options = {
-      valueNames: ['name', 'date']
+      valueNames: ['name', 'desc', 'type']
     };
 
-    var hackerList = new List('css bits', options,);
-    
-    hackerList.add( {name: '<a href = "google.com">Jonas</a>', date:'13/13/13'});
-
-    hackerList.add( {name: '<a href = "google.com">Jonas</a>', date:'13/13/13'});
+    var greatList = new List('main search', options);
 
   </script>
+
+  <!-- list entries -->
+  <script src="./entries/calculators.js"></script>
 
 
 </body>

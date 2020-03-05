@@ -1,0 +1,32 @@
+/* css used on most of the website, mostly the index */
+
+body {
+    font-family: 'Roboto Light', 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.line {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #fdd104 65%);
+    display: inline;
+}
+
+.title {
+    font-family: "Roboto Light";
+    font-style: italic;
+    font-size: xx-large;
+}
+
+.name {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
