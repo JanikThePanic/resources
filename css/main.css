@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Roboto Light', 'Roboto', sans-serif;
-  font-size: large;
+  font-size: 1.5em;
 }
 
-/* the line behind the repository */
+/* the line behind "the repository" */
 .line {
   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #fdd104 65%);
   display: inline;
@@ -19,113 +19,18 @@ body {
 /* the main title */
 .heading {
   font-style: italic;
-  font-size: 52px;
+  font-size: 200%;
   text-align: center;
   text-decoration: none;
   color: black;
   margin: 4vh 0 4vh 0;
 }
 
-/* makes the link look good */
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover:not(.line) {
-    text-decoration: underline;
-    color: black;
-}
-
-
-/* the sorting buttons */
-.sort {
-  margin-top: 5px;
-  background-color: black;
-  border: none;
-  width: 10%;
-  color: white;
-  padding: 6px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-.sort:hover {
-  background-color: #fdd104;
-  color: black;
-}
-
-/* the search bar */
-.search {
-  padding: 6px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 12px;
-  font-size: 16px;
-  color: black;
-  border: 1px solid black;
-  width: 25%;
-}
-
-.search::placeholder {
-  color: #585858;
-}
-
-/* the search and buttons */
-.in {
-  text-align: center;
-  margin-bottom: 2vh;
-}
-
-/* will split the search and buttons on mobile */
-.breaker {
-  display: none;
-}
-
-/* table formatting */
-
-table { 
-  border-collapse:separate; 
-  border-spacing:0 2vh;
-  table-layout: auto;
-  width: 75%;
-  margin-left: auto; 
-  margin-right: auto;
-}
-
-td {
-  border-bottom: 1px solid #A9A9A9;
-  padding-bottom: 2vh;
-}
-
-/* name of entry */
-.name {
-  font-family: "Roboto";
-  font-weight: bold;
-  width: 15%;
-}
-/* entry type */
-.type {
-  display: table-cell;
-  width: 15%;
-  font-style: italic;
-  text-align: center;
-}
 
 
 /* Responsive */
-@media screen and (max-width: 500px) {
-  .breaker {
-    display: block;
-  }
-  .sort {
-    width: 35%;
-  }
-  .search {
-    width: 72%;
+@media screen and (max-width: 1023px) {
+  body {
+    font-size: 1.2em;
   }
 }
