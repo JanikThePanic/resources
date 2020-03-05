@@ -16,13 +16,9 @@
 	<!-- <link rel="shortcut icon" href="./icon.png" type="image/png"> -->
 
 	<!-- jquery bro -->
-	<script src="./libraries/jquery-3.4.1.min.js">
-
-	</script>
+	<script src="./libraries/jquery-3.4.1.min.js"></script>
 	<!-- list.js (listing lia) -->
-	<script src=" ./libraries/list.min.js">
-
-	</script>
+	<script src=" ./libraries/list.min.js"></script>
 
 </head>
 
@@ -30,19 +26,18 @@
 
 	<!-- "the repository" heading-->
 	<div class="heading">
-		<p class="line">the repository</p>
+    <p class="line">the repository</p>
 	</div>
 
-	<div class="page">
 
+	<!-- the great search list of everything -->
+	<div id="repo">
 
-		<!-- the great search list of everything -->
-		<div id="repo">
-			<div class="in">
-
-				<!-- search bar -->
-				<input class="search" placeholder="Search">
+		<div class="in">
+			<!-- search bar -->
+			<input class="search" placeholder="Search">
         <br class="breaker">
+
         <!-- sorting buttons -->
         <button class="sort" data-sort="name">
          Sort by Name
@@ -52,12 +47,23 @@
        </button>
      </div>
 
+     <table>
+       <tbody class="list">
+         <tr>
+           <td class="name"><a href="./about.html">About</a></td>
+           <td class="desc">- The About page of <i class="line">the repository</i>.</td>
+           <td class="type">About Page</td>
+         </tr>
+       </tbody>
+     </table>
+
+
     <!-- the list -->
-    <ul class="list">
+    <!-- <ul class="list">
 
 
       <!-- template entry and also the about page -->
-      <li>
+      <!-- <li>
         <a href="./about.html" class="name">About</a>
         <br class="breaker">
         <span class="desc">- The About page of <i class="line">the repository</i>.</span>
@@ -65,26 +71,16 @@
         <i class="type">About Page</i>
       </li>
 
-    </ul>
+    </ul> -->
 
   </div>
 
-  </div>
 
-
-  <script>
-    // sets vars that are needed for entry
-    var options = {
-      valueNames: ['name', 'desc', 'type']
-    };
-
-    var greatList = new List('repo', options);
-
-  </script>
+  <!-- loads main js file -->
+  <script src="./main.js"></script>
 
   <!-- list entries -->
   <script src="./entries/calculators.js"></script>
-
 
 </body>
 
