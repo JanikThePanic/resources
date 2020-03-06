@@ -11,6 +11,12 @@ body {
   display: inline;
 }
 
+.darkmode--activated .line {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #fdd104 65%);
+  color: white;
+}
+
+
 /* for hover of the heading */
 .line:hover:not(i){
   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #ffe677 65%);
