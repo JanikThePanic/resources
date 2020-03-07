@@ -9,9 +9,6 @@ var options = {
 var greatList = new List('repo', options);
 
 
-// darkmode
-new Darkmode({ label: '🌓' }).showWidget();
-
 // Opens outside pages in new tabe
 $(document).ready(function () {
 
