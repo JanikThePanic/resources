@@ -9,6 +9,20 @@ var options = {
 var greatList = new List('repo', options);
 
 
+// darkmode
+const darkmode = new darken({
+  class: "darkmode-active",
+	default: "dark",
+	remember: "darken-mode",
+  variables: {
+    "--primary-color": ["#000000", "#fafafa"],
+    "--background-color": ["#fafafa", "#000000"],
+    "--search-color": ["#585858", "white"]
+  },
+  toggle: "#darkmode-button",
+});
+
+
 // Opens outside pages in new tabe
 $(document).ready(function () {
 

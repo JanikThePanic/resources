@@ -1,8 +1,23 @@
 /* css used on most of the website, mostly the index */
 
+:root {
+  --transform-time :.5s;
+}
+
 body {
   font-family: 'Roboto Light', 'Roboto', sans-serif;
   font-size: 1.4em;
+  background-color: var(--background-color);
+
+  /* Firefox */
+  -moz-transition: all var(--transform-time) linear;
+  /* WebKit */
+  -webkit-transition: all var(--transform-time) linear;
+  /* Opera */
+  -o-transition: all var(--transform-time) linear;
+  /* Standard */
+  transition: all var(--transform-time) linear;
+  color: var(--primary-color);
 }
 
 /* the line behind "the repository" */
@@ -11,9 +26,16 @@ body {
   display: inline;
 }
 
-.darkmode--activated .line {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #fdd104 65%);
-  color: white;
+.line {
+  /* Firefox */
+  -moz-transition: all var(--transform-time) linear;
+  /* WebKit */
+  -webkit-transition: all var(--transform-time) linear;
+  /* Opera */
+  -o-transition: all var(--transform-time) linear;
+  /* Standard */
+  transition: all var(--transform-time) linear;
+  color: var(--primary-color);
 }
 
 
@@ -32,6 +54,11 @@ body {
   margin: 4vh 0 4vh 0;
 }
 
+/* darkmode widget */
+#darkmode-button {
+  position: fixed;
+  
+}
 
 
 /* Responsive */
