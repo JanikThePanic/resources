@@ -57,7 +57,16 @@ body {
 /* darkmode widget */
 #darkmode-button {
   position: fixed;
-  
+  bottom: 32px;
+  right: 32px;
+  background-color: var(--primary-color);
+  width: 64px;
+  height: 64px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
 }
 
 
