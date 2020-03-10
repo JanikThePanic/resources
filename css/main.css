@@ -38,12 +38,14 @@ body {
   transition: all var(--transform-time) linear;
   
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 
 /* for hover of the heading */
 .line:hover:not(i){
   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #ffe677 65%);
+  text-decoration: none;
 }
 
 /* the main title */
@@ -88,6 +90,36 @@ body {
   -o-transition: all var(--transform-time) linear;
   /* Standard */
   transition: all var(--transform-time) linear;
+}
+
+/* lost button on 404 page */
+.lost {
+  /* Firefox */
+  -moz-transition: all var(--transform-time) linear;
+  /* WebKit */
+  -webkit-transition: all var(--transform-time) linear;
+  /* Opera */
+  -o-transition: all var(--transform-time) linear;
+  /* Standard */
+  transition: all var(--transform-time) linear;
+  
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border: none;
+  border-radius: .75em;
+  padding: 10px 12px;
+  font-size: 1em;
+  font-family: Roboto Light;
+  display: block;
+  margin-top: -1vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lost:hover {
+  background-color:lightgray;
+  cursor: pointer;
 }
 
 

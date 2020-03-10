@@ -1,19 +1,6 @@
 // main js
 
 
-// sets vars that are needed for entry
-var options = {
-  valueNames: [
-    'name',
-    'desc',
-    'type',
-    { name: 'link', attr: 'href' }
-  ]
-};
-
-var greatList = new List('repo', options);
-
-
 // darkmode
 const darkmode = new darken({
   class: "darkmode-active",
