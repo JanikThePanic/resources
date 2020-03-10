@@ -21,8 +21,7 @@ const darkmode = new darken({
 	remember: "darken-mode",
   variables: {
     "--primary-color": ["#000000", "#fafafa"],
-    "--background-color": ["#fafafa", "#000000"],
-    "--search-color": ["#585858", "white"]
+    "--background-color": ["#fafafa", "#000000"]
   },
   toggle: "#darkmode-button",
 });
