@@ -5,10 +5,9 @@
 const darkmode = new darken({
   class: "darkmode-active",
 	default: "light",
-	remember: "darken-mode",
   variables: {
-    "--primary-color": ["#000000", "#fafafa"],
-    "--background-color": ["#fafafa", "#000000"]
+    "--primary-color": ["#fafafa", "#000000"],
+    "--background-color": ["#000000", "#fafafa"]
   },
   toggle: "#darkmode-button",
 });
