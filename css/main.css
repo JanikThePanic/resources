@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Roboto Light', 'Roboto', sans-serif;
   font-size: 1.4em;
   background-color: var(--background-color);
 
