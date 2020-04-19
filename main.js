@@ -13,34 +13,8 @@ const darkmode = new darken({
 });
 
 
-// Opens outside pages in new tabe
-$(document).ready(function () {
-
-  $("a[href^=http]").each(function () {
-
-    // NEW - excluded domains list
-    var excludes = [
-      'excludeddomain1.com',
-      'excludeddomain2.com',
-      'excluded.subdomain.com'
-    ];
-    for (i = 0; i < excludes.length; i++) {
-      if (this.href.indexOf(excludes[i]) != -1) {
-        return true; // continue each() with next link
-      }
-    }
-
-    if (this.href.indexOf(location.hostname) == -1) {
-
-      // attach a do-nothing event handler to ensure we can 'trigger' a click on this link
-      $(this).click(function () { return true; });
-
-      $(this).attr({
-        target: "_blank",
-        title: "Opens in a new window"
-      });
-
-      $(this).click(); // trigger it
-    }
-  })
-});
+// Open external links in a new window or tab.
+var domain = window.location.hostname;
+domain = domain.substring(domain.indexOf('.') + 1);
+var not = '[href*="' + domain + '"]';
+$("a[href^='http']").not(not).attr('target', '_blank');
