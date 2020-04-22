@@ -14,36 +14,13 @@ const darkmode = new darken({
 
 
 // Open external links in a new window or tab.
-function ready(fn) {
-  if (document.readyState != 'loading') {
-    fn();
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', fn);
-  } else {
-    document.attachEvent('onreadystatechange', function () {
-      if (document.readyState != 'loading')
-        fn();
+$('a').each(function () {
+  var a = new RegExp('/' + window.location.host + '/');
+  if (!a.test(this.href)) {
+    $(this).click(function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      window.open(this.href, '_blank');
     });
   }
 }
-
-ready(function () {
-
-  var website = window.location.hostname;
-
-  var internalLinkRegex = new RegExp('^((((http:\\/\\/|https:\\/\\/)(www\\.)?)?'
-    + website
-    + ')|(localhost:\\d{4})|(\\/.*))(\\/.*)?$', '');
-
-  var anchorEls = document.querySelectorAll('a');
-  var anchorElsLength = anchorEls.length;
-
-  for (var i = 0; i < anchorElsLength; i++) {
-    var anchorEl = anchorEls[i];
-    var href = anchorEl.getAttribute('href');
-
-    if (!internalLinkRegex.test(href)) {
-      anchorEl.setAttribute('target', '_blank');
-    }
-  }
-});
