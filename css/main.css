@@ -110,37 +110,6 @@ body {
   transition: all var(--transform-time) linear;
 }
 
-/* lost button on 404 page */
-.lost {
-  /* Firefox */
-  -moz-transition: all var(--transform-time) linear;
-  /* WebKit */
-  -webkit-transition: all var(--transform-time) linear;
-  /* Opera */
-  -o-transition: all var(--transform-time) linear;
-  /* Standard */
-  transition: all var(--transform-time) linear;
-  
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  text-decoration: none;
-  border: none;
-  border-radius: .75em;
-  padding: 10px 12px;
-  font-size: 1em;
-  font-family: Roboto Light;
-  display: block;
-  margin-top: -1vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.lost:hover {
-  background-color:lightgray;
-  cursor: pointer;
-}
-
-
 /* Responsive */
 @media screen and (max-width: 1023px) {
   body {
