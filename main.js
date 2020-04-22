@@ -14,13 +14,4 @@ const darkmode = new darken({
 
 
 // Open external links in a new window or tab.
-$('a').each(function() {
-  var a = new RegExp('/' + window.location.host + '/');
-  if(!a.test(this.href)) {
-      $(this).click(function(event) {
-          event.preventDefault();
-          event.stopPropagation();
-          window.open(this.href, '_blank');
-      });
-  }
-});
+function externalLinks() { for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }; externalLinks();
