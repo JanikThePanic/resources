@@ -2,18 +2,8 @@
 
 
 /* makes the link look good */
-a{
+a {
     text-decoration: none;
-    
-    /* Firefox */
-    -moz-transition: all var(--transform-time) linear;
-    /* WebKit */
-    -webkit-transition: all var(--transform-time) linear;
-    /* Opera */
-    -o-transition: all var(--transform-time) linear;
-    /* Standard */
-    transition: all var(--transform-time) linear;
-  
     color: var(--primary-color);
 }
 
@@ -26,18 +16,7 @@ a:hover:not(.line) {
 /* the sorting buttons */
 .sort {
   margin-top: 5px;
-
-  /* Firefox */
-  -moz-transition: all var(--transform-time) linear;
-  /* WebKit */
-  -webkit-transition: all var(--transform-time) linear;
-  /* Opera */
-  -o-transition: all var(--transform-time) linear;
-  /* Standard */
-  transition: all var(--transform-time) linear;
-
   background-color: var(--primary-color);
-
   border: none;
   width: 10rem;
   color: var(--background-color);
@@ -65,21 +44,6 @@ a:hover:not(.line) {
   background-color: var(--background-color);
   border: 1px solid var(--primary-color);
   width: 25%;
-
-  /* Firefox */
-  -moz-transition: all var(--transform-time) linear;
-  /* WebKit */
-  -webkit-transition: all var(--transform-time) linear;
-  /* Opera */
-  -o-transition: all var(--transform-time) linear;
-  /* Standard */
-  transition: all var(--transform-time) linear;
-}
-
-/* the search and buttons */
-.in {
-  text-align: center;
-  margin-bottom: 5vh;
 }
 
 /* will split the search and buttons on mobile */
@@ -103,9 +67,8 @@ td {
   padding-bottom: 2vh;
 }
 
-/* name of entry */
-.name {
-  font-family: "Roboto";
+/* name of entry css */
+td:nth-child(1) {
   font-weight: bold;
   width: 15%;
 }
@@ -120,20 +83,19 @@ td {
 
 /* Responsive */
 @media screen and (max-width: 1024px) {
+  /* putts sort buttons under search */
   .breaker {
     display: block;
   }
-
+  /* sort and search looks nice */
   .sort {
     width: 35%;
     font-size: .9rem;
   }
-
   .search {
     width: 72%;
     font-size: 1rem;
   }
-
   /* collapse table by row */
   table { 
     display: block;
@@ -142,15 +104,16 @@ td {
     margin-left: auto; 
     margin-right: auto;
   }
-  .type {
-    width: 100%;
-    border-bottom: 1px solid #A9A9A9;
-    text-align: left;
-  }
   td {
     width: 100%;  
     display: block;
     border-bottom: none;
     padding-bottom: 2%;
+  }
+  /* make the last row make a seprating border */
+  td:nth-child(3) {
+    width: 100%;
+    border-bottom: 1px solid #A9A9A9;
+    text-align: left;
   }
 }

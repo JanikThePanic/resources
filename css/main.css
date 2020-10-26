@@ -1,23 +1,13 @@
-/* css used on most of the website, mostly the index */
+/* css used by the whole website */
 
 :root {
-  --transform-time :.45s;
+  --primary-color: black;
+  --background-color: white;
+  font-family: 'Roboto Light', 'Roboto', sans-serif;
 }
 
 body {
-  font-family: 'Roboto Light', 'Roboto', sans-serif;
   font-size: 1.4em;
-  background-color: var(--background-color);
-
-  /* Firefox */
-  -moz-transition: all var(--transform-time) linear;
-  /* WebKit */
-  -webkit-transition: all var(--transform-time) linear;
-  /* Opera */
-  -o-transition: all var(--transform-time) linear;
-  /* Standard */
-  transition: all var(--transform-time) linear;
-  
   color: var(--primary-color);
 }
 
@@ -45,22 +35,7 @@ body {
   display: inline;
 }
 
-.line {
-  /* Firefox */
-  -moz-transition: all var(--transform-time) linear;
-  /* WebKit */
-  -webkit-transition: all var(--transform-time) linear;
-  /* Opera */
-  -o-transition: all var(--transform-time) linear;
-  /* Standard */
-  transition: all var(--transform-time) linear;
-  
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-
-/* for hover of the heading */
+/* for hover overing "the repo", but i dont want the one in the about page entrie to be hoverable */
 .line:hover:not(i){
   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #ffe677 65%);
   text-decoration: none;
@@ -69,26 +44,9 @@ body {
 /* the main title */
 .heading {
   font-style: italic;
-  font-size: 200%;
   text-align: center;
   text-decoration: none;
   color: black;
-  margin: 4vh 0 5vh 0;
-}
-
-/* darkmode widget */
-#darkmode-button {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  background-color: var(--primary-color);
-  width: 50px;
-  height: 50px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  font-size: 24px;
 }
 
 /* github mark */
@@ -99,15 +57,6 @@ body {
   top: 0;
   border: 0;
   right: 0;
-  
-  /* Firefox */
-  -moz-transition: all var(--transform-time) linear;
-  /* WebKit */
-  -webkit-transition: all var(--transform-time) linear;
-  /* Opera */
-  -o-transition: all var(--transform-time) linear;
-  /* Standard */
-  transition: all var(--transform-time) linear;
 }
 
 /* Responsive */

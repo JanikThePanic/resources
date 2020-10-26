@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- there are entries, containing resources, in a resource there is a title, link, description, and catagory -->
+
+<entries>
+    <resource>
+        <title>About</title>
+        <link>/about</link>
+        <description>The About page of the repository</description>
+        <catagory>About Page</catagory>
+    </resource>
+    <resource>
+        <title>Cylinder Generator</title>
+        <link>https://www.bimba.com/Products-and-Cad/Actuators/Inch/Round-Line/Non-Repairable/Original-Line-Cylinder</link>
+        <description>Generates CAD models of air cylinders</description>
+        <catagory>CAD Design</catagory>
+    </resource>
+    <resource>
+        <title>Gear Generator</title>
+        <link>https://geargenerator.com/</link>
+        <description>Generates CAD drawings of gears</description>
+        <catagory>CAD Design</catagory>
+    </resource>
+    <resource>
+        <title>Belt Calculator</title>
+        <link>https://sdp-si.com/eStore/CenterDistanceDesigner</link>
+        <description>Simple to use calculator to determine belt lengths and center to center distances</description>
+        <catagory>Calculators</catagory>
+    </resource>
+    <resource>
+        <title>Chain Calculator</title>
+        <link>http://www.botlanta.org/converters/dale-calc/sprocket.html</link>
+        <description>Simple to use calculator to determine chain links and center to center distances</description>
+        <catagory>Calculators</catagory>
+    </resource>
+    <resource>
+        <title>Chain Calculator</title>
+        <link>https://www.rbracing-rsr.com/chainlength.html</link>
+        <description>Less simple calculator to determine chain links and center to center distances</description>
+        <catagory>Calculators</catagory>
+    </resource>
+    <resource>
+        <title>Pulley Calculator</title>
+        <link>https://www.daycounter.com/Calculators/Timing-Belt-Pulley-Design-Calculator/</link>
+        <description>Calculates the number of teeth needed on timing belt pulleys</description>
+        <catagory>Calculators</catagory>
+    </resource>
+    <resource>
+        <title>Free Mockups</title>
+        <link>https://mockups-design.com/</link>
+        <description>Site filled with free product mockups</description>
+        <catagory>Graphic Design</catagory>
+    </resource>
+    <resource>
+        <title>Bamboos</title>
+        <link>https://github.com/Aaron-Bird/bamboo</link>
+        <description>A carousel widget. Written in JavaScript without third-party libraries</description>
+        <catagory>Libraries | JS</catagory>
+    </resource>
+    <resource>
+        <title>Lightbox</title>
+        <link>https://lokeshdhakar.com/projects/lightbox2/</link>
+        <description>Image to full-screen display library</description>
+        <catagory>Libraries | JS</catagory>
+    </resource>
+    <resource>
+        <title>List.js</title>
+        <link>https://listjs.com/</link>
+        <description>Library that adds search, sort, filters and flexibility to plain HTML lists or tables</description>
+        <catagory>Libraries | JS</catagory>
+    </resource>
+    <resource>
+        <title>Darken</title>
+        <link>https://github.com/ColinEspinas/darken</link>
+        <description>Dark mode made easy</description>
+        <catagory>Libraries | JS</catagory>
+    </resource>
+    <resource>
+        <title>IBM Model M</title>
+        <link>https://www.pckeyboard.com/page/product/UNI0P4A</link>
+        <description>IBM Model M Keyboard I will one day own</description>
+        <catagory>Mechanical Keyboards</catagory>
+    </resource>
+    <resource>
+        <title>GMK Dots GB</title>
+        <link>https://novelkeys.xyz/products/gmk-dots-gb?variant=28541793599581</link>
+        <description>Keycaps with just solid colour dots</description>
+        <catagory>Mechanical Keyboards</catagory>
+    </resource>
+    <resource>
+        <title>Funeral Music</title>
+        <link>https://youtu.be/oIscL-Bjsq4</link>
+        <description>Once all has passed, please, I beg you, play this at my funeral</description>
+        <catagory>Other</catagory>
+    </resource>
+    <resource>
+        <title>SLAM</title>
+        <link>http://slam.flankers.net/</link>
+        <description>Soundboard for CSGO, CS Source, and TF2</description>
+        <catagory>Other</catagory>
+    </resource>
+</entries>
