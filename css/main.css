@@ -44,9 +44,11 @@ body {
 /* the main title */
 .heading {
   font-style: italic;
+  font-size: 220%;
   text-align: center;
   text-decoration: none;
   color: black;
+  margin: 4vh 0 5vh 0;
 }
 
 /* github mark */

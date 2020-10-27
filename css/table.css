@@ -3,15 +3,19 @@
 
 /* makes the link look good */
 a {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
-
 a:hover:not(.line) {
-    text-decoration: underline;
-    color: black;
+  text-decoration: underline;
+  color: black;
 }
 
+/* input divistion */
+.inputs {
+  text-align: center;
+  margin-bottom: 5vh;
+}
 
 /* the sorting buttons */
 .sort {
@@ -28,7 +32,6 @@ a:hover:not(.line) {
   border-radius: .7em;
   cursor: pointer;
 }
-
 .sort:hover {
   background-color: #fdd104;
   color: black;
@@ -52,7 +55,6 @@ a:hover:not(.line) {
 }
 
 /* table formatting */
-
 table { 
   border-collapse:separate;
   border-spacing:0 2vh;
@@ -61,20 +63,18 @@ table {
   margin-left: auto; 
   margin-right: auto;
 }
-
 td {
   border-bottom: 1px solid #A9A9A9;
   padding-bottom: 2vh;
 }
-
 /* name of entry css */
 td:nth-child(1) {
+  font-family: "Roboto";
   font-weight: bold;
-  width: 15%;
+  width: 16%;
 }
-
-/* entry type */
-.type {
+/* entry catagory row css*/
+td:nth-child(3) {
   width: 15%;
   font-style: italic;
   text-align: center;
@@ -93,11 +93,11 @@ td:nth-child(1) {
     font-size: .9rem;
   }
   .search {
-    width: 72%;
+    width: 70%;
     font-size: 1rem;
   }
   /* collapse table by row */
-  table { 
+  table {
     display: block;
     border-spacing:0 2vh;
     width: 88%;
@@ -109,6 +109,10 @@ td:nth-child(1) {
     display: block;
     border-bottom: none;
     padding-bottom: 2%;
+  }
+  /* name of entry css */
+  td:nth-child(1) {
+    width: 100%;
   }
   /* make the last row make a seprating border */
   td:nth-child(3) {

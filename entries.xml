@@ -3,12 +3,6 @@
 
 <entries>
     <resource>
-        <title>About</title>
-        <link>/about</link>
-        <description>The About page of the repository</description>
-        <catagory>About Page</catagory>
-    </resource>
-    <resource>
         <title>Cylinder Generator</title>
         <link>https://www.bimba.com/Products-and-Cad/Actuators/Inch/Round-Line/Non-Repairable/Original-Line-Cylinder</link>
         <description>Generates CAD models of air cylinders</description>
@@ -51,7 +45,7 @@
         <catagory>Graphic Design</catagory>
     </resource>
     <resource>
-        <title>Bamboos</title>
+        <title>Bamboo</title>
         <link>https://github.com/Aaron-Bird/bamboo</link>
         <description>A carousel widget. Written in JavaScript without third-party libraries</description>
         <catagory>Libraries | JS</catagory>

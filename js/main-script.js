@@ -27,7 +27,7 @@ function loadXML() {
 // function that loops through the data and spins it into the html. required the "this" from the request made above
 function loadTable(xml) {
     var file = xml.responseXML; // js thingy, its todo with the request
-    var table = ""; // the varible that will hold the data with its needed html elements
+    var table = document.getElementById("repo-table").innerHTML; // the varible that will hold the data with its needed html elements
     var pulledData = file.getElementsByTagName("resource"); // picks out just the resources aka "<resource>"
 
     // loops through all <resource>'s and addes them to the great table varible
@@ -47,8 +47,9 @@ function loadTable(xml) {
     }
     // sets the html inside the empty table we made to be the great table varible we just made
     document.getElementById("repo-table").innerHTML = table;
-    // by default sort the table by name
-    sortTable(0);
+    // by default sort the table by catagory
+    sortTable(2);
+    sortTable(2);
 }
 
 // search function. the search bar searches through name and description
