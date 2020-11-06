@@ -82,7 +82,7 @@ td:nth-child(3) {
 
 
 /* Responsive */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   /* putts sort buttons under search */
   .breaker {
     display: block;
