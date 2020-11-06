@@ -8,7 +8,7 @@ function loadXML() {
     var xmlhttp = new XMLHttpRequest();
 
     // GET, file location and name, and some other propertie i forget
-    xmlhttp.open("GET", "http://janikdesign.dx.am/entries.xml", true);
+    xmlhttp.open("GET", "https://the-repository.000webhostapp.com/entries.xml", true);
     xmlhttp.send();
 
     // when there is a change in the request's state, itll check all is green and run the table loading function
