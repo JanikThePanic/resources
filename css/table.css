@@ -1,16 +1,5 @@
 /* css used on most of the index */
 
-
-/* makes the link look good */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-a:hover:not(.line) {
-  text-decoration: underline;
-  color: black;
-}
-
 /* input divistion */
 .inputs {
   text-align: center;

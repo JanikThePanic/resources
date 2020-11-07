@@ -37,7 +37,7 @@ function loadTable(xml) {
         // lastly, there are a ending tags added
         table += "<tr><td><a href =\'" +
         pulledData[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
-        "\'>"+
+        "\' target=\"_blank\">"+
         pulledData[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
         "</a></td><td>" +
         pulledData[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +

@@ -11,6 +11,16 @@ body {
   color: var(--primary-color);
 }
 
+/* makes the link look good */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+a:hover:not(.line) {
+  text-decoration: underline;
+  color: black;
+}
+
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
@@ -59,6 +69,16 @@ body {
   top: 0;
   border: 0;
   right: 0;
+}
+
+/* code for the extra class which is just used when i need to write some other stuff in like the about and 404 */
+.extra {
+  margin-top: 8vh;
+  max-width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 200%;
 }
 
 /* Responsive */
