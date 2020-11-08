@@ -53,6 +53,7 @@ a:hover:not(.line) {
 
 /* the main title */
 .heading {
+  font-family: 'Roboto Light';
   font-style: italic;
   font-size: 220%;
   text-align: center;
@@ -85,5 +86,8 @@ a:hover:not(.line) {
 @media screen and (max-width: 1023px) {
   body {
     font-size: 1.2em;
+  }
+  .extra {
+    max-width: 80%;
   }
 }
