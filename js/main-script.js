@@ -49,7 +49,6 @@ function loadTable(xml) {
     document.getElementById("repo-table").innerHTML = table;
     // by default sort the table by catagory
     sortTable(2);
-    sortTable(2);
 }
 
 // search function. the search bar searches through name and description
