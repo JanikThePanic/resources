@@ -53,7 +53,7 @@ a:hover:not(.line) {
 
 /* the main title */
 .heading {
-  font-family: 'Roboto Light';
+  font-family: 'Roboto';
   font-style: italic;
   font-size: 220%;
   text-align: center;
