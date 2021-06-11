@@ -12,13 +12,13 @@ function loadXML() {
     xmlhttp.send();
 
     // when there is a change in the request's state, itll check all is green and run the table loading function
-    xmlhttp.onreadystatechange = function(){
+    xmlhttp.onreadystatechange = function () {
         // all green
         if (this.readyState == 4 && this.status == 200) {
             loadTable(this);
         }
         // cant find the xml
-        if(this.status == 404) {
+        if (this.status == 404) {
             console.log("couldn't find the xml file")
         }
     }
@@ -36,14 +36,14 @@ function loadTable(xml) {
         // the getElements then addes the each info bit to a coloum so to put it
         // lastly, there are a ending tags added
         table += "<tr><td><a href =\'" +
-        pulledData[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
-        "\' target=\"_blank\">"+
-        pulledData[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-        "</a></td><td>" +
-        pulledData[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
-        "</td><td>" +
-        pulledData[i].getElementsByTagName("catagory")[0].childNodes[0].nodeValue +
-        "</td></tr>";
+            pulledData[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
+            "\' target=\"_blank\">" +
+            pulledData[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+            "</a></td><td>" +
+            pulledData[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            pulledData[i].getElementsByTagName("catagory")[0].childNodes[0].nodeValue +
+            "</td></tr>";
     }
     // sets the html inside the empty table we made to be the great table varible we just made
     document.getElementById("repo-table").innerHTML = table;
@@ -58,7 +58,7 @@ function search() {
     var tableRow = table.getElementsByTagName("tr"); // pulls all the tablerows
 
     // theses two varibles will hold the title/description of the row we're running through
-    var title, description; 
+    var title, description;
 
     // will run throuhg all the rows
     for (i = 0; i < tableRow.length; i++) {
@@ -88,7 +88,7 @@ function sortTable(sortBy) {
     var switchCount = 0; // this shows the number of switchs made, starts with 0
     var currentRow; // will hold the plain data of the current row compared
     var nextRow; // wil hold the plain  data of the row next to the current one
-            
+
     // since i have to sort the name by a different tag, i need to make a varible that changes based on whats being sorted
     var lookInto;
     if (sortBy == 0) {
@@ -102,16 +102,16 @@ function sortTable(sortBy) {
     while (switching) {
         // set it that there is no switching done, this may be changed later
         switching = false;
-        
+
         // loop through all the rows in the table (row.length - 1 is needed as if we're at the last row, there is no next row)
-        for(rowNum = 0; rowNum < (row.length - 1); rowNum++) {
+        for (rowNum = 0; rowNum < (row.length - 1); rowNum++) {
             // state that there is need for switching at the moment
             shouldSwitch = false;
             // compare the current and next row, and see if they are in the order you're sorting by. the "sortBy" pulls the coloum we're sorting by
             currentRow = row[rowNum].getElementsByTagName(lookInto)[sortBy];
             nextRow = row[rowNum + 1].getElementsByTagName(lookInto)[sortBy];
             // check if the rows compared need to switch places, based on the order (will first put both to upper case)
-            if (order == "asc") {   
+            if (order == "asc") {
                 if (currentRow.innerHTML.toUpperCase() > nextRow.innerHTML.toUpperCase()) {
                     // if this is true, mark it as a switch and break the loop to move to switching
                     shouldSwitch = true;
@@ -142,5 +142,25 @@ function sortTable(sortBy) {
                 switching = true;
             }
         }
+    }
+}
+
+function changeColour() {
+    // Get the root element
+    var root = document.querySelector(':root');
+    // Get the styles (properties and values) for the root
+    var styles = getComputedStyle(root);
+
+    // if in white mode rn
+    if (styles.getPropertyValue('--primary-color') == '#e8e6e3') {
+        root.style.setProperty('--primary-color', 'black');
+        root.style.setProperty('--background-color', 'white');
+        root.style.setProperty('--yellow', '#fdd104');
+    }
+    else {
+        // toggle to dark
+        root.style.setProperty('--primary-color', '#e8e6e3');
+        root.style.setProperty('--background-color', '#181a1b');
+        root.style.setProperty('--yellow', '#ffd7257c');
     }
 }

@@ -3,11 +3,32 @@
 :root {
   --primary-color: black;
   --background-color: white;
+  --yellow: #fdd104;
+  /* --primary-color: #e8e6e3;
+  --background-color: #181a1b;
+  --yellow: #ffd7257c; */
   font-family: 'Roboto Light', 'Roboto', sans-serif;
+}
+
+* {
+  transition: 0.3s;
+  transition-property: color, background-color;
+}
+
+.cat {
+  color: var(--background-color);
+}
+
+.cat-bg {
+  color: var(--primary-color);
 }
 
 body {
   font-size: 1.4em;
+  background-color: var(--background-color);
+}
+
+p {
   color: var(--primary-color);
 }
 
@@ -18,7 +39,6 @@ a {
 }
 a:hover:not(.line) {
   text-decoration: underline;
-  color: black;
 }
 
 /* scroll bar */
@@ -41,13 +61,13 @@ a:hover:not(.line) {
 
 /* the line behind "the repository" */
 .line {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #fdd104 65%);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, var(--yellow) 65%);
   display: inline;
 }
 
 /* for hover overing "the repo", but i dont want the one in the about page entrie to be hoverable */
 .line:hover:not(i){
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #ffe677 65%);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, var(--yellow) 65%);
   text-decoration: none;
 }
 
@@ -80,6 +100,20 @@ a:hover:not(.line) {
   margin-right: auto;
   text-align: center;
   line-height: 200%;
+}
+
+/* time to do some dark moding buttons */
+.color-btn {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: none;
+  bottom: 2.5em;
+  right: 2.5em;
+  position:fixed;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  text-align: center;
 }
 
 /* Responsive */

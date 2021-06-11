@@ -44,7 +44,7 @@
 }
 
 /* table formatting */
-table { 
+table {
   border-collapse:separate;
   border-spacing:0 2vh;
   table-layout: auto;
@@ -53,6 +53,7 @@ table {
   margin-right: auto;
 }
 td {
+  color: var(--primary-color);
   border-bottom: 1px solid #A9A9A9;
   padding-bottom: 2vh;
 }
@@ -61,6 +62,7 @@ td:nth-child(1) {
   font-family: "Roboto";
   font-weight: bold;
   width: 16%;
+  padding-right: 1%;
 }
 /* entry catagory row css*/
 td:nth-child(3) {
